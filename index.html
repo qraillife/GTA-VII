@@ -1,19 +1,318 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101014"><meta name="description" content="Grand Theft Auto VII — an unofficial fan-made concept experience."><title>Grand Theft Auto VII — Fan Concept</title><style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
-:root{color-scheme:dark;--bg:#101014;--white:#fff;--accent:#ffc3a1}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.topbar{height:76px;position:fixed;z-index:100;inset:0 0 auto;display:flex;align-items:center;gap:30px;padding:0 5%;background:rgba(11,11,14,.83);backdrop-filter:blur(20px);border-bottom:1px solid #ffffff22}.brand{font:900 32px 'Barlow Condensed',sans-serif;letter-spacing:-2px;line-height:.8}.brand span{display:block;font:700 8px Inter;letter-spacing:1.3px;margin-top:6px}.topbar nav{display:flex;gap:34px;margin:auto}.topbar nav a{font-size:13px;font-weight:700}.topbar nav a:hover{color:var(--accent)}.header-cta,.pill{border-radius:50px;background:#fff;color:#111;padding:15px 24px;font-size:12px;font-weight:800;letter-spacing:.06em}.header-cta:hover,.pill:hover{background:var(--accent)}.menu{display:none;background:none;border:0;color:white;font-size:25px}.hero{min-height:850px;height:100svh;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#31245b 0%,#bd5d83 36%,#fca779 63%,#3b2243 100%)}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 72% 57%,#ffe0a4aa,transparent 30%),linear-gradient(90deg,#24193c99,transparent 65%)}.sun{position:absolute;width:min(48vw,550px);aspect-ratio:1;border-radius:50%;background:linear-gradient(#ffe9a7,#ffb67d);top:27%;left:54%;filter:blur(1px);box-shadow:0 0 100px #ffd0a555}.skyline{position:absolute;inset:auto 0 0;height:38%;background:repeating-linear-gradient(90deg,transparent 0 43px,#261b35 44px 90px,transparent 91px 118px),linear-gradient(0deg,#110f1a 4%,#251c36 80%,transparent 80%);clip-path:polygon(0 30%,5% 30%,5% 20%,10% 20%,10% 39%,15% 39%,15% 10%,20% 10%,20% 35%,26% 35%,26% 22%,32% 22%,32% 44%,39% 44%,39% 15%,45% 15%,45% 35%,53% 35%,53% 5%,58% 5%,58% 31%,65% 31%,65% 20%,71% 20%,71% 40%,78% 40%,78% 14%,83% 14%,83% 30%,91% 30%,91% 22%,100% 22%,100% 100%,0 100%)}.hero-content{position:relative;z-index:2;text-align:center;transform:translateY(22px);filter:drop-shadow(0 8px 20px #21132e77)}.eyebrow,.kicker{font-size:12px;letter-spacing:.26em;font-weight:800}.gta-mark{display:flex;flex-direction:column;font:900 clamp(60px,11vw,155px)/.68 'Barlow Condensed',Impact,sans-serif;letter-spacing:-.065em;margin:38px 0 0;text-shadow:3px 4px 0 #25202b,-2px -2px 0 #25202b}.roman{font:900 clamp(170px,27vw,380px)/.9 Georgia,serif;font-style:italic;letter-spacing:-.14em;padding-right:.15em;background:linear-gradient(135deg,#fff4a7 10%,#ffb5a4 42%,#e66da9 70%,#8144a5);background-clip:text;color:transparent;-webkit-text-stroke:3px #3c2148;margin-top:15px}.hero-tag{font-weight:800;letter-spacing:.23em;font-size:13px;margin:12px 0 38px}.pill{display:inline-flex;gap:30px;align-items:center}.hero-bottom{position:absolute;z-index:3;bottom:26px;left:5%;right:5%;display:flex;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:.12em}.section{padding:110px 6%}.dark{background:#101014}.section-head{max-width:1000px;margin:0 auto 45px}.section-head h2{font:900 clamp(56px,9vw,125px)/.95 'Barlow Condensed',sans-serif;margin:16px 0}.section-head p{color:#b8b8c1;font-size:17px}.feature-video{max-width:1400px;margin:auto;min-height:560px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at 65% 40%,#f6a67e,transparent 33%),linear-gradient(145deg,#25214c,#a44c7a 60%,#261c35)}.feature-video:after{content:'';position:absolute;inset:auto 0 0;height:60%;background:linear-gradient(transparent,#111b)}.play-ring{width:100px;height:100px;border:2px solid white;border-radius:50%;display:grid;place-items:center;font-size:30px;z-index:2}.video-copy{position:absolute;bottom:38px;left:45px;z-index:2}.video-copy h3{font:900 42px 'Barlow Condensed';margin:8px 0}.video-copy p{max-width:400px;color:#eee}.story{min-height:720px;display:flex;align-items:center;background:radial-gradient(circle at 80% 60%,#e17d74 0%,transparent 33%),linear-gradient(120deg,#241936 10%,#704262 55%,#ca776e)}.story-inner{max-width:680px}.story h2{font:900 clamp(70px,11vw,150px)/.85 'Barlow Condensed';margin:28px 0}.story p{font-size:19px;line-height:1.75;max-width:570px}.outline{display:inline-block;border:2px solid white;padding:17px 24px;border-radius:40px;font-size:12px;font-weight:800;margin-top:30px}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1400px;margin:auto}.tile{min-height:570px;position:relative;display:flex;align-items:end;border-radius:9px;overflow:hidden;padding:30px;background:linear-gradient(0deg,#15111f,#0000 70%),linear-gradient(145deg,#c35c8a,#ffc18d)}.tile-one{background:linear-gradient(0deg,#15111f,transparent 75%),linear-gradient(145deg,#553b86,#ffae86)}.tile-two{background:linear-gradient(0deg,#15111f,transparent 75%),linear-gradient(135deg,#285e84,#8ac2ba 55%,#f3bd89)}.tile-three{background:linear-gradient(0deg,#15111f,transparent 75%),linear-gradient(135deg,#271b4d,#c34c8a 60%,#ee9d77)}.tile:before{content:'';position:absolute;inset:28% 0 0;background:repeating-linear-gradient(90deg,transparent 0 48px,#211c3588 49px 80px,transparent 81px 110px);clip-path:polygon(0 55%,18% 55%,18% 28%,30% 28%,30% 45%,48% 45%,48% 15%,58% 15%,58% 50%,75% 50%,75% 35%,90% 35%,90% 60%,100% 60%,100% 100%,0 100%)}.tile>div{position:relative}.tile small{letter-spacing:.2em;font-weight:800}.tile h3{font:900 55px 'Barlow Condensed';margin:8px 0}.tile p{color:#eee}.gallery{background:#19171e}.gallery-grid{display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:280px 280px;gap:18px}.gallery-panel{border-radius:10px;position:relative;background:linear-gradient(140deg,#392b70,#e384a2)}.gallery-panel span{position:absolute;bottom:24px;left:24px;font-weight:800;letter-spacing:.2em}.g1{grid-row:span 2;background:radial-gradient(circle at 65% 45%,#ffcc9a,transparent 35%),linear-gradient(140deg,#3c326f,#df7699)}.g2{background:linear-gradient(130deg,#184e65,#6eabc0,#e9ad89)}.g3{background:linear-gradient(140deg,#261e54,#af4b8e,#ef9e88)}.closing{text-align:center;padding:130px 20px;background:linear-gradient(160deg,#b65591,#efaa85)}.closing>span{font-size:12px;letter-spacing:.2em;font-weight:800}.closing-logo{font:italic 900 clamp(180px,30vw,420px)/1 Georgia,serif;color:#ffdeb2;text-shadow:7px 9px 0 #5c315f}.closing p{margin:0 auto 35px;max-width:500px}footer{padding:55px 6%;display:flex;gap:60px;align-items:start}footer>div{min-width:240px}footer strong,footer span{display:block}footer strong{font:900 27px 'Barlow Condensed'}footer span{font-size:10px;letter-spacing:.15em;margin-top:8px}footer p{font-size:12px;color:#a7a7ae;line-height:1.8;max-width:750px;margin:0}.visible{opacity:1}@media(max-width:800px){.topbar{height:65px;padding:0 20px}.menu{display:block;margin-left:auto}.topbar nav{display:none;position:absolute;top:65px;left:0;right:0;padding:24px;background:#111;flex-direction:column;gap:24px}.topbar nav.open{display:flex}.header-cta{display:none}.hero{min-height:670px}.sun{width:70vw;left:40%;top:30%}.hero-content{transform:translateY(0)}.gta-mark{font-size:clamp(60px,16vw,110px)}.roman{font-size:clamp(150px,45vw,270px)}.hero-bottom{font-size:8px}.hero-bottom a{display:none}.section{padding:75px 22px}.feature-video{min-height:420px}.video-copy{left:22px;bottom:20px;right:15px}.video-copy h3{font-size:32px}.story{min-height:620px}.story p{font-size:16px}.tiles{grid-template-columns:1fr}.tile{min-height:390px}.gallery-grid{display:block}.gallery-panel{height:270px;margin-bottom:16px}.closing{padding:85px 15px}footer{display:block}footer p{margin-top:30px}}
 
-</style></head><body><header class="topbar"><a href="#home" class="brand" aria-label="GTA VII home">VII<span>FAN CONCEPT</span></a><button id="menuToggle" class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="#watch">Watch</a><a href="#story">Story</a><a href="#world">Explore</a><a href="#gallery">Gallery</a></nav><a class="header-cta" href="#watch">WATCH CONCEPT</a></header><main><section class="hero" id="home"><div class="sun"></div><div class="skyline"></div><div class="hero-content"><div class="eyebrow">AN UNOFFICIAL GRAND THEFT AUTO CONCEPT</div><div class="gta-mark"><span>GRAND</span><span>THEFT</span><span>AUTO</span></div><div class="roman">VII</div><p class="hero-tag">A NEW CITY. A NEW EMPIRE.</p><a class="pill" href="#watch">EXPLORE THE CONCEPT <span>↗</span></a></div><div class="hero-bottom">FAN-MADE CONCEPT · NO OFFICIAL RELEASE DATE <a href="#watch">SCROLL TO EXPLORE ↓</a></div></section><section id="watch" class="section dark"><div class="section-head"><span class="kicker">WATCH</span><h2>The Concept</h2><p>A cinematic vision of what the next chapter could become.</p></div><div class="feature-video"><div class="play-ring">▶</div><div class="video-copy"><small>FAN CONCEPT</small><h3>Welcome to the Next Era</h3><p>Concept trailer coming soon. Add your own video to bring this section to life.</p></div></div></section><section id="story" class="story section"><div class="story-inner"><span class="kicker">THE STORY</span><h2>EVERY CITY<br>HAS A PRICE.</h2><p>In the fictional coastal metropolis of Solara, every deal comes with a debt. Beneath the skyline, two strangers cross paths in a world where loyalty is currency and ambition changes everything.</p><a href="#world" class="outline">DISCOVER SOLARA ↗</a></div></section><section id="world" class="section dark"><div class="section-head"><span class="kicker">PEOPLE & PLACES</span><h2>Only in Solara</h2><p>A fictional world created for this independent fan concept.</p></div><div class="tiles"><article class="tile tile-one"><div><small>01 / THE CITY</small><h3>Solara City</h3><p>Bright lights. Long shadows.</p></div></article><article class="tile tile-two"><div><small>02 / THE COAST</small><h3>Golden Shore</h3><p>Paradise always has a price.</p></div></article><article class="tile tile-three"><div><small>03 / THE NIGHT</small><h3>After Hours</h3><p>Everything changes after dark.</p></div></article></div></section><section id="gallery" class="section gallery"><div class="section-head"><span class="kicker">MEDIA</span><h2>The Gallery</h2><p>Atmospheric concept artwork, rendered with CSS. Replace these panels with your own images anytime.</p></div><div class="gallery-grid"><div class="gallery-panel g1"><span>SOLARA / 01</span></div><div class="gallery-panel g2"><span>SOLARA / 02</span></div><div class="gallery-panel g3"><span>SOLARA / 03</span></div></div></section><section class="closing"><span>THE NEXT CHAPTER IS YOURS TO IMAGINE</span><div class="closing-logo">VII</div><p>Unofficial GTA VII fan concept — no release date or gameplay is announced here.</p><a class="pill" href="#home">BACK TO TOP ↑</a></section></main><footer><div><strong>GRAND THEFT AUTO VII</strong><span>INDEPENDENT FAN PROJECT</span></div><p>Fan-made concept. Not affiliated with, sponsored, or endorsed by Rockstar Games or Take-Two Interactive. Grand Theft Auto and related marks belong to their respective owners. All story and location names on this site are fictional.</p></footer><script>
-const menuButton = document.getElementById('menuToggle');
-const nav = document.getElementById('nav');
-menuButton.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.textContent = open ? '✕' : '☰';
-});
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.textContent = '☰';
-}));
 
-</script></body></html>
+<div id="pre"><b>VII</b><i></i></div>
+
+<header class="topbar" id="topbar">
+  <a class="rstar" href="#top" aria-label="Rockstar Games">
+    <svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.2L21 9.1l-5 4.2 1.6 6.5L12 16.4 6.4 19.8 8 13.3 3 9.1l6.6-.9z"></path></svg>
+  </a>
+  <div class="spacer"></div>
+  <nav class="tnav">
+    <a href="#trailer">Watch</a>
+    <a href="#story">Story</a>
+    <a href="#cast">Cast</a>
+    <a href="#gallery">Screens</a>
+    <a href="#city">City</a>
+    <a href="#editions">Editions</a>
+  </nav>
+  <a class="tbuy" href="#editions">Pre-Order</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+</header>
+
+<nav class="mobilemenu" id="mobilemenu">
+  <a href="#trailer">Watch</a>
+  <a href="#story">Story</a>
+  <a href="#cast">Cast</a>
+  <a href="#gallery">Screens</a>
+  <a href="#city">City</a>
+  <a href="#editions">Editions</a>
+</nav>
+
+
+<section class="hero" id="top">
+  <div class="hero-img" id="heroImg"></div>
+  <div class="hero-in">
+    <div class="logo">
+      <span class="logo-gta">Grand Theft Auto</span>
+      <span class="logo-vii">VII</span>
+    </div>
+    <div class="hero-sub">
+      <p class="hero-coming">Coming <b>2045</b></p>
+      <div class="hero-actions">
+        <a class="btn btn--fill" href="#editions">Pre-Order Now</a>
+        <button class="btn btn--line" data-open="trailerModal">Watch Trailer</button>
+      </div>
+      <div class="hero-plat">
+        <span><svg viewBox="0 0 24 24"><path d="M8.5 5h11v2h-11zM4.5 9h15v2h-15zM6.5 13h11v2h-11zM9.5 17h5v2h-5z"></path></svg>PlayStation 5</span>
+        <span><svg viewBox="0 0 24 24"><path d="M5 4h14v14H5zM7 6v10h10V6z"></path></svg>Xbox Series X|S</span>
+        <span><svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zM5 7v7h14V7zM8 18h8v2H8z"></path></svg>PC</span>
+      </div>
+      <p class="hero-best">Plays best on PlayStation 5 Pro</p>
+    </div>
+  </div>
+  <div class="scrollhint"></div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div>
+    <span>Pre-orders open</span><span>Watch the announcement trailer</span><span>Vice City, 2045</span><span>Ultimate Edition available</span>
+    <span>Pre-orders open</span><span>Watch the announcement trailer</span><span>Vice City, 2045</span><span>Ultimate Edition available</span>
+  </div>
+</div>
+
+
+<section id="trailer">
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">Watch</p>
+        <h2>Announcement<br>Trailer</h2>
+      </div>
+      <p class="sub">First look. Captured in-engine on PlayStation 5 Pro.</p>
+    </div>
+    <button class="trailer rev" data-open="trailerModal" aria-label="Play announcement trailer">
+      <img src="assets/trailer-poster.jpg" alt="A character walking down a sunlit boulevard in Vice City">
+      <span class="trailer-ui"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 3l16 9-16 9z"></path></svg></span></span>
+      <span class="trailer-cap">
+        <h3>Vice City, 2045</h3>
+        <small>4K · 2:14</small>
+      </span>
+    </button>
+  </div>
+</section>
+
+
+<section id="story">
+  <div class="wrap">
+    <div class="story">
+      <div class="story-img rev">
+        <img src="assets/shot-1.jpg" alt="Aerial view of the city at sunset">
+      </div>
+      <div class="rev">
+        <p class="kicker">The Story</p>
+        <h2>Nobody leaves<br>Vice City clean</h2>
+        <div class="rule"></div>
+        <p class="lead">The neon never went out. It just got smarter. In 2045 the waterfront is a corporate arcology, the swamp is a data farm, and every debt in Leonida is denominated in something you can't hold.</p>
+        <p>Rico Márquez spent nine years running cars between the port and the towers. One delivery goes missing. One manifest doesn't match. Now he's holding a debt to a bank that doesn't have a building, and the only people who'll touch him are the ones who set him up.</p>
+        <p>Across a city that rewrites its own skyline every quarter, three people chase the same ledger — through the arcades, the yacht basin, the dead malls and the flood zones the developers forgot to buy.</p>
+        <p>It ends where it always ends. On the water, at dawn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="cast">
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">People</p>
+        <h2>Three ways<br>down</h2>
+      </div>
+      <p class="sub">Play as all three. Switch at any moment, including mid-heist.</p>
+    </div>
+    <div class="cast">
+      <article class="actor rev" tabindex="0">
+        <img src="assets/cast-1.jpg" alt="Portrait of a woman in a leather jacket under neon light">
+        <div class="actor-txt">
+          <p class="actor-role">The Wheelman</p>
+          <h3 class="actor-name">Nadia Fuentes</h3>
+          <p class="actor-bio">Grew up in her father's body shop. Drives anything with a frame and takes it personally when she loses.</p>
+        </div>
+      </article>
+      <article class="actor rev" tabindex="0">
+        <img src="assets/cast-2.jpg" alt="Portrait of a man in a suit on a rooftop at dusk">
+        <div class="actor-txt">
+          <p class="actor-role">The Broker</p>
+          <h3 class="actor-name">Ellis Okafor</h3>
+          <p class="actor-bio">Moves paper between the towers and the docks. Owns three apartments and sleeps in none of them.</p>
+        </div>
+      </article>
+      <article class="actor rev" tabindex="0">
+        <img src="assets/cast-3.jpg" alt="Portrait of an older man in coveralls in a garage">
+        <div class="actor-txt">
+          <p class="actor-role">The Ghost</p>
+          <h3 class="actor-name">Ray Delgado</h3>
+          <p class="actor-bio">Retired twice. Knows which containers never get scanned and which cops never get promoted.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">Screenshots</p>
+        <h2>The Gallery</h2>
+      </div>
+      <p class="sub">All captured in-game. No photo mode filters.</p>
+    </div>
+    <div class="grid">
+      <button class="shot a rev" data-open="lightbox" data-src="assets/shot-1.jpg"><img src="assets/shot-1.jpg" alt="Aerial city view at sunset"></button>
+      <button class="shot b rev" data-open="lightbox" data-src="assets/shot-2.jpg"><img src="assets/shot-2.jpg" alt="Crowded neon nightclub"></button>
+      <button class="shot c rev" data-open="lightbox" data-src="assets/shot-3.jpg"><img src="assets/shot-3.jpg" alt="Police chase on a causeway at dusk"></button>
+      <button class="shot d rev" data-open="lightbox" data-src="assets/shot-4.jpg"><img src="assets/shot-4.jpg" alt="Public beach at midday"></button>
+      <button class="shot e rev" data-open="lightbox" data-src="assets/shot-5.jpg"><img src="assets/shot-5.jpg" alt="Rain-soaked alley at night"></button>
+      <button class="shot f rev" data-open="lightbox" data-src="assets/shot-6.jpg"><img src="assets/shot-6.jpg" alt="Highway out of the city at golden hour"></button>
+    </div>
+  </div>
+</section>
+
+
+<section id="city">
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">Leonida</p>
+        <h2>The City</h2>
+      </div>
+      <p class="sub">Nine districts. One tide. Nobody agrees where the water ends.</p>
+    </div>
+    <div class="dist rev">
+      <div data-n="01"><h4>Oceanfront</h4><p>Hotel strip. Neon that runs on a timer.</p></div>
+      <div data-n="02"><h4>Arcade Row</h4><p>Dead malls retrofitted into server farms.</p></div>
+      <div data-n="03"><h4>Basin</h4><p>Yachts by night, containers by day.</p></div>
+      <div data-n="04"><h4>Flood Zone 4</h4><p>Half-sunk blocks the developers skipped.</p></div>
+      <div data-n="05"><h4>Little Havana</h4><p>Coffee at 3am. Everybody knows your mother.</p></div>
+      <div data-n="06"><h4>The Arcology</h4><p>Corporate housing with its own weather.</p></div>
+      <div data-n="07"><h4>Causeway</h4><p>Eleven miles of open water and nowhere to turn.</p></div>
+      <div data-n="08"><h4>Griffin Park</h4><p>Golf, gates, private security with dogs.</p></div>
+      <div data-n="09"><h4>The Glades</h4><p>Swamp, airboats, and people who don't file taxes.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="editions">
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">Pre-Order</p>
+        <h2>Editions</h2>
+      </div>
+      <p class="sub">All pre-orders include the <strong>Oceanfront Pack</strong> — three vehicles, two weapons and a garage on the strip.</p>
+    </div>
+    <div class="editions">
+      <div class="ed rev">
+        <h3>Standard</h3>
+        <p class="cost">$69.99</p>
+        <ul>
+          <li>Grand Theft Auto VII</li>
+          <li>Oceanfront Pack</li>
+          <li>1,000,000 in-game credits</li>
+        </ul>
+        <a class="btn btn--line" href="#signup">Pre-Order</a>
+      </div>
+      <div class="ed feat rev">
+        <span class="ed-tag">Most Popular</span>
+        <h3>Deluxe</h3>
+        <p class="cost">$99.99</p>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>Basin Pack — 6 vehicles, 4 weapons</li>
+          <li>Marina safehouse</li>
+          <li>Digital soundtrack and score</li>
+        </ul>
+        <a class="btn btn--fill" href="#signup">Pre-Order</a>
+      </div>
+      <div class="ed rev">
+        <h3>Ultimate</h3>
+        <p class="cost">$149.99</p>
+        <ul>
+          <li>Everything in Deluxe</li>
+          <li>Arcology penthouse</li>
+          <li>3 months of membership</li>
+          <li>Exclusive livery set</li>
+        </ul>
+        <a class="btn btn--line" href="#signup">Pre-Order</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="wrap">
+    <div class="head rev">
+      <div>
+        <p class="kicker">Newswire</p>
+        <h2>Latest</h2>
+      </div>
+      <a class="btn btn--line" href="#">View All</a>
+    </div>
+    <div class="news">
+      <a class="post rev" href="#">
+        <span class="post-date">November 5, 2044</span>
+        <h4>Announcement Trailer: A First Look at Vice City, 2045</h4>
+        <p>Two minutes, one city, and the people who are about to tear it open.</p>
+        <span class="go">Read →</span>
+      </a>
+      <a class="post rev" href="#">
+        <span class="post-date">October 30, 2044</span>
+        <h4>Pre-Order Bonuses and Editions Detailed</h4>
+        <p>What's in the Oceanfront Pack, and why the tow rig is the best thing in it.</p>
+        <span class="go">Read →</span>
+      </a>
+      <a class="post rev" href="#">
+        <span class="post-date">October 22, 2044</span>
+        <h4>Inside the Arcology: Building a Vertical City</h4>
+        <p>Environment lead Ana Ruiz on elevators, sightlines and the cost of height.</p>
+        <span class="go">Read →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="signup">
+  <div class="wrap">
+    <div class="signup rev">
+      <p class="kicker">Dispatch</p>
+      <h2>Get the call</h2>
+      <p class="sub" style="margin:0 auto">Release dates, trailer drops and pre-order windows.</p>
+      <form id="form" novalidate="">
+        <label class="sr" for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required="">
+        <button class="btn btn--fill" type="submit">Sign Up</button>
+      </form>
+      <small>By signing up you agree to receive news and marketing from a video game company that does not exist.</small>
+      <p class="ok" id="ok" hidden="">You're on the list.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fcols">
+    <div class="fbrand">
+      <span class="mark">VII</span>
+      <p>Grand Theft Auto VII. Vice City, Leonida, 2045. Fan-made concept site. Not affiliated with Rockstar Games or Take-Two Interactive.</p>
+    </div>
+    <div class="fcol"><h5>Game</h5><ul><li><a href="#trailer">Trailer</a></li><li><a href="#story">Story</a></li><li><a href="#cast">Cast</a></li><li><a href="#gallery">Screenshots</a></li></ul></div>
+    <div class="fcol"><h5>Buy</h5><ul><li><a href="#editions">Editions</a></li><li><a href="#editions">Pre-Order</a></li><li><a href="#">Merchandise</a></li><li><a href="#">Soundtrack</a></li></ul></div>
+    <div class="fcol"><h5>More</h5><ul><li><a href="#">Newswire</a></li><li><a href="#">Support</a></li><li><a href="#">Press Kit</a></li><li><a href="#">Careers</a></li></ul></div>
+  </div>
+  <div class="legal">
+    <div class="esrb"><b>M</b><span>Mature 17+ Blood, Strong Language, Violence</span></div>
+    <p>Grand Theft Auto VII is a fictional product. All screenshots are simulated. Online features may require an account and internet connection. Content and release dates subject to change. © 2044 Carcer Interactive. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<div class="overlay" id="trailerModal" role="dialog" aria-modal="true" aria-label="Announcement trailer">
+  <button class="x" data-close="" aria-label="Close">×</button>
+  <video controls="" playsinline="" poster="assets/trailer-poster.jpg">
+    <source src="assets/trailer.mp4" type="video/mp4">
+    Your browser does not support video. Replace assets/trailer.mp4 or swap in a YouTube iframe.
+  </video>
+</div>
+
+<div class="overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot">
+  <button class="x" data-close="" aria-label="Close">×</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+
+
